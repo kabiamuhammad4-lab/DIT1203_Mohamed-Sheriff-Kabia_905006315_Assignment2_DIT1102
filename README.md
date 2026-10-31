@@ -3,7 +3,7 @@
 A responsive five-page-plus website for **GreenHarvest**, a small business that connects farmers and buyers in Sierra Leone.
 It is my work for **DCOMP 204 Web Design, Assignment 2** (HTML, CSS and a responsive website) at Limkokwing University of Creative Technology, Sierra Leone.
 
-- **Student:** Muhammad Kabia
+- **Student:** Mohamed Sheriff Kabia
 - **Lecturer:** Amadu Kamara
 - **Technologies:** HTML5 and CSS3 only (no JavaScript, no frameworks)
 
