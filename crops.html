@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Crops | GreenHarvest</title>
+  <meta name="description" content="Browse the crops on offer at GreenHarvest: rice, cassava, tomatoes, maize, groundnuts, sweet potatoes, pepper and cocoa.">
+  <meta name="theme-color" content="#1e4d36">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <!-- fonts: Bricolage Grotesque for headings, Atkinson Hyperlegible for text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== HEADER AND MENU (the same on every page) ===== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="38" height="38">
+        <span>GreenHarvest</span>
+      </a>
+
+      <!-- phone menu: a hidden checkbox opens and closes the links (CSS only) -->
+      <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Open the menu">
+      <label class="nav__button" for="nav-toggle">Menu</label>
+
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="crops.html" aria-current="page">Our Crops</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="tips.html">Farming Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a class="btn btn--primary nav__cta" href="contact.html">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== PAGE TITLE ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Our Crops</li>
+          </ol>
+        </nav>
+        <h1>Our Crops</h1>
+        <p>Fresh crops from trusted farmers.</p>
+      </div>
+    </section>
+
+    <!-- ===== CROPS WITH CATEGORY BUTTONS ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="visually-hidden">All crops</h2>
+        <div class="filter">
+          <!-- the radio buttons are hidden. The labels below work as the category buttons. -->
+          <input type="radio" name="category" id="c-all" checked>
+          <input type="radio" name="category" id="c-grains">
+          <input type="radio" name="category" id="c-vegetables">
+          <input type="radio" name="category" id="c-fruits">
+          <input type="radio" name="category" id="c-roots">
+          <input type="radio" name="category" id="c-legumes">
+
+          <div class="chips" role="group" aria-label="Choose a crop category">
+            <label for="c-all">All</label>
+            <label for="c-grains">Grains</label>
+            <label for="c-vegetables">Vegetables</label>
+            <label for="c-fruits">Fruits</label>
+            <label for="c-roots">Roots &amp; Tubers</label>
+            <label for="c-legumes">Legumes</label>
+          </div>
+
+          <p class="filter-empty">There are no crops in this category yet. Please check again soon.</p>
+
+          <!-- the prices are sample prices -->
+          <div class="crop-grid">
+          <article class="crop grains" id="rice">
+            <div class="media">
+              <img src="images/crop-rice.jpg" alt="Bowls of white rice on a wooden table in front of a green rice field" width="500" height="342" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Rice</h3>
+              <p class="crop__price">Le 22 <small>per kg</small></p>
+              <p class="crop__text">Clean long-grain rice, dried and bagged.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about rice</a>
+          </article>
+          <article class="crop roots" id="cassava">
+            <div class="media">
+              <img src="images/crop-cassava.jpg" alt="A pile of fresh cassava roots" width="800" height="533" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Cassava</h3>
+              <p class="crop__price">Le 8 <small>per kg</small></p>
+              <p class="crop__text">Fresh cassava roots, harvested this week.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about cassava</a>
+          </article>
+          <article class="crop vegetables" id="tomatoes">
+            <div class="media">
+              <img src="images/crop-tomatoes.jpg" alt="Ripe red tomatoes growing in rows" width="736" height="552" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Tomatoes</h3>
+              <p class="crop__price">Le 18 <small>per kg</small></p>
+              <p class="crop__text">Firm, ripe tomatoes for the pot or the market.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about tomatoes</a>
+          </article>
+          <article class="crop grains" id="maize">
+            <div class="media">
+              <img src="images/crop-maize.jpg" alt="Ripe yellow maize cobs on the plant" width="736" height="414" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Maize</h3>
+              <p class="crop__price">Le 10 <small>per kg</small></p>
+              <p class="crop__text">Dried maize, ready for milling or feed.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about maize</a>
+          </article>
+          <article class="crop legumes" id="groundnuts">
+            <div class="media">
+              <img src="images/crop-groundnuts.jpg" alt="Groundnut plants in a field and a heap of shelled and unshelled groundnuts" width="900" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Groundnuts</h3>
+              <p class="crop__price">Le 30 <small>per kg</small></p>
+              <p class="crop__text">Shelled groundnuts, sorted and clean.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about groundnuts</a>
+          </article>
+          <article class="crop roots" id="sweet-potatoes">
+            <div class="media">
+              <img src="images/crop-sweet-potatoes.jpg" alt="A heap of sweet potatoes" width="800" height="533" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Sweet Potatoes</h3>
+              <p class="crop__price">Le 9 <small>per kg</small></p>
+              <p class="crop__text">Sweet potatoes with a rich, sweet taste.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about sweet potatoes</a>
+          </article>
+          <article class="crop vegetables" id="pepper">
+            <div class="media">
+              <img src="images/crop-pepper.jpg" alt="Red chilli peppers on the plant" width="736" height="414" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Pepper</h3>
+              <p class="crop__price">Le 40 <small>per kg</small></p>
+              <p class="crop__text">Hot peppers, fresh or dried on request.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about pepper</a>
+          </article>
+          <article class="crop cash" id="cocoa">
+            <div class="media">
+              <img src="images/crop-cocoa.jpg" alt="A worker sorting cocoa beans that are drying in the sun" width="626" height="417" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Cocoa</h3>
+              <p class="crop__price">Le 55 <small>per kg</small></p>
+              <p class="crop__text">Fermented and dried cocoa beans.</p>
+            </div>
+            <a class="link-more" href="contact.html">Ask about cocoa</a>
+          </article>
+          </div>
+        </div>
+
+        <nav class="pagination" aria-label="Page numbers">
+          <a href="crops.html" aria-label="Previous page">&lsaquo;</a>
+          <a href="crops.html" aria-current="page" aria-label="Page 1">1</a>
+          <a href="crops.html" aria-label="Page 2">2</a>
+          <a href="crops.html" aria-label="Page 3">3</a>
+          <a href="crops.html" aria-label="Next page">&rsaquo;</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Can&rsquo;t find the crop you need?</h2>
+            <p>Tell us and we will help you find it.</p>
+          </div>
+          <a class="btn btn--light" href="contact.html">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (the same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/logo-light.svg" alt="" width="38" height="38">
+            <span>GreenHarvest</span>
+          </a>
+          <p>We connect farmers and buyers so good crops reach good tables.</p>
+        </div>
+
+        <div>
+          <h2>Quick links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="crops.html">Our Crops</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tips.html">Farming Tips</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contact info</h2>
+          <ul>
+            <li>12 Farm Road, Freetown, Sierra Leone</li>
+            <li><a href="tel:+23200000000">+232 00 000 000</a></li>
+            <li><a href="mailto:hello@greenharvest.com">hello@greenharvest.com</a></li>
+            <li>Monday to Saturday, 8am to 5pm</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Follow us</h2>
+          <ul class="social">
+            <li><a href="#" aria-label="GreenHarvest on Facebook"><img src="images/social-facebook.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="#" aria-label="GreenHarvest on LinkedIn"><img src="images/social-linkedin.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="#" aria-label="GreenHarvest on X"><img src="images/social-x.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="#" aria-label="GreenHarvest on YouTube"><img src="images/social-youtube.svg" alt="" width="22" height="22"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GreenHarvest. All rights reserved.</p>
+        <p>Privacy Policy &nbsp;|&nbsp; Terms</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

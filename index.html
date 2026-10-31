@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | GreenHarvest</title>
+  <meta name="description" content="GreenHarvest connects farmers and buyers in Sierra Leone. Find fresh crops, fair prices and simple farming tips.">
+  <meta name="theme-color" content="#1e4d36">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <!-- fonts: Bricolage Grotesque for headings, Atkinson Hyperlegible for text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== HEADER AND MENU (the same on every page) ===== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="38" height="38">
+        <span>GreenHarvest</span>
+      </a>
+
+      <!-- phone menu: a hidden checkbox opens and closes the links (CSS only) -->
+      <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Open the menu">
+      <label class="nav__button" for="nav-toggle">Menu</label>
+
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="crops.html">Our Crops</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="tips.html">Farming Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a class="btn btn--primary nav__cta" href="contact.html">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__panel">
+        <div class="hero__content">
+          <h1>Good crops, grown with care, sold with trust</h1>
+          <p class="hero__lead">We help farmers sell their harvest and help buyers find fresh, quality crops at fair prices.</p>
+          <div class="btn-row">
+            <a class="btn btn--light" href="crops.html">See our crops</a>
+            <a class="btn btn--ghost-light" href="services.html#how-it-works">How it works</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="images/hero.jpg" alt="Neat green rows of crops stretching across a farm field under a blue sky" width="1000" height="667" fetchpriority="high">
+      </div>
+    </section>
+
+    <!-- ===== NUMBERS ===== -->
+    <section class="numbers" aria-label="GreenHarvest in numbers">
+      <div class="container">
+        <ul class="numbers__list">
+          <li><span class="numbers__value">500+</span><span class="numbers__label">Farmers</span></li>
+          <li><span class="numbers__value">40+</span><span class="numbers__label">Crop types</span></li>
+          <li><span class="numbers__value">2,000+</span><span class="numbers__label">Happy buyers</span></li>
+          <li><span class="numbers__value">10+</span><span class="numbers__label">Years of experience</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT PREVIEW ===== -->
+    <section class="section">
+      <div class="container split">
+        <div class="split__media media">
+          <img src="images/farm.jpg" alt="Farmers harvesting vegetables in green rows on a hillside farm" width="1200" height="917" loading="lazy" decoding="async">
+        </div>
+        <div class="split__text">
+          <h2>A trusted link between farmers and buyers</h2>
+          <p>GreenHarvest started with a simple idea: farmers should get a fair price and buyers should get fresh crops. We make that easy.</p>
+          <p>We know the farms, we know the buyers, and we stand between them so that both sides can trust the deal.</p>
+          <a class="btn btn--outline" href="about.html">Read our story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR CROPS ===== -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Our crops</h2>
+            <p>Some of the crops you can find with us.</p>
+          </div>
+          <a class="link-more" href="crops.html">View all crops</a>
+        </div>
+        <div class="crop-grid">
+          <article class="crop grains" id="rice">
+            <div class="media">
+              <img src="images/crop-rice.jpg" alt="Bowls of white rice on a wooden table in front of a green rice field" width="500" height="342" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Rice</h3>
+              <p class="crop__price">Le 22 <small>per kg</small></p>
+              <p class="crop__text">Clean long-grain rice, dried and bagged.</p>
+            </div>
+            <a class="link-more" href="crops.html#rice">View rice</a>
+          </article>
+          <article class="crop roots" id="cassava">
+            <div class="media">
+              <img src="images/crop-cassava.jpg" alt="A pile of fresh cassava roots" width="800" height="533" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Cassava</h3>
+              <p class="crop__price">Le 8 <small>per kg</small></p>
+              <p class="crop__text">Fresh cassava roots, harvested this week.</p>
+            </div>
+            <a class="link-more" href="crops.html#cassava">View cassava</a>
+          </article>
+          <article class="crop vegetables" id="tomatoes">
+            <div class="media">
+              <img src="images/crop-tomatoes.jpg" alt="Ripe red tomatoes growing in rows" width="736" height="552" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Tomatoes</h3>
+              <p class="crop__price">Le 18 <small>per kg</small></p>
+              <p class="crop__text">Firm, ripe tomatoes for the pot or the market.</p>
+            </div>
+            <a class="link-more" href="crops.html#tomatoes">View tomatoes</a>
+          </article>
+          <article class="crop grains" id="maize">
+            <div class="media">
+              <img src="images/crop-maize.jpg" alt="Ripe yellow maize cobs on the plant" width="736" height="414" loading="lazy" decoding="async">
+            </div>
+            <div class="crop__body">
+              <h3>Maize</h3>
+              <p class="crop__price">Le 10 <small>per kg</small></p>
+              <p class="crop__text">Dried maize, ready for milling or feed.</p>
+            </div>
+            <a class="link-more" href="crops.html#maize">View maize</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT WE DO ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>What we do</h2>
+            <p>Three simple ways we can help you.</p>
+          </div>
+        </div>
+        <div class="offers">
+          <a class="offer" href="services.html#buy">
+            <img src="images/icon-buy.svg" alt="" width="52" height="52">
+            <h3>Buy crops</h3>
+            <p>Find fresh crops straight from the farm.</p>
+          </a>
+          <a class="offer" href="services.html#sell">
+            <img src="images/icon-sell.svg" alt="" width="52" height="52">
+            <h3>Sell your harvest</h3>
+            <p>Reach more buyers and get a fair price.</p>
+          </a>
+          <a class="offer" href="services.html#delivery">
+            <img src="images/icon-delivery.svg" alt="" width="52" height="52">
+            <h3>Delivery &amp; storage</h3>
+            <p>We help move and keep your crops safe.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT PEOPLE SAY (sample quotes: replace with real ones) ===== -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head">
+          <h2>What people say</h2>
+        </div>
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote class="quote__text">
+              <p>I found a buyer for my rice in one week. The team was honest and the price was fair.</p>
+            </blockquote>
+            <figcaption class="quote__who">
+              <img src="images/person-farmer.jpg" alt="" width="240" height="240" loading="lazy" decoding="async">
+              <div><strong>Mohamed B.</strong><span>Rice farmer</span></div>
+            </figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote class="quote__text">
+              <p>Now I get fresh cassava and tomatoes for my shop every week without running around.</p>
+            </blockquote>
+            <figcaption class="quote__who">
+              <img src="images/person-buyer.jpg" alt="" width="240" height="240" loading="lazy" decoding="async">
+              <div><strong>Sorie K.</strong><span>Shop owner</span></div>
+            </figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote class="quote__text">
+              <p>The farming tips are short and clear. I use them on my uncle&rsquo;s farm every holiday.</p>
+            </blockquote>
+            <figcaption class="quote__who">
+              <img src="images/person-student.jpg" alt="" width="240" height="240" loading="lazy" decoding="async">
+              <div><strong>Ibrahim T.</strong><span>Agriculture student</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LATEST FARMING TIPS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest farming tips</h2>
+          <a class="link-more" href="tips.html">All farming tips</a>
+        </div>
+        <div class="post-grid">
+          <article class="post storage">
+            <div class="media media--wide">
+              <img src="images/tip-storing-rice.jpg" alt="Rows of rice sacks stacked in a large clean warehouse" width="900" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="post__meta">
+              <span class="post__tag">Storage</span>
+              <time datetime="2026-10-12">12 Oct 2026</time>
+            </div>
+            <h3><a href="tips.html">How to store rice after harvest</a></h3>
+            <p>Dry it well, use clean sacks and keep it off the floor.</p>
+            <a class="link-more" href="tips.html">Read more<span class="visually-hidden">: How to store rice after harvest</span></a>
+          </article>
+          <article class="post growing">
+            <div class="media media--wide">
+              <img src="images/tip-growing-tomatoes.jpg" alt="Farm workers checking tomato plants in a field" width="900" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="post__meta">
+              <span class="post__tag">Growing</span>
+              <time datetime="2026-10-12">12 Oct 2026</time>
+            </div>
+            <h3><a href="tips.html">Simple ways to grow better tomatoes</a></h3>
+            <p>Water, space and support: three small things that make a big difference.</p>
+            <a class="link-more" href="tips.html">Read more<span class="visually-hidden">: Simple ways to grow better tomatoes</span></a>
+          </article>
+          <article class="post selling">
+            <div class="media media--wide">
+              <img src="images/tip-when-to-sell.jpg" alt="A farm field with a sack of grain and books about farming" width="735" height="490" loading="lazy" decoding="async">
+            </div>
+            <div class="post__meta">
+              <span class="post__tag">Selling</span>
+              <time datetime="2026-10-12">12 Oct 2026</time>
+            </div>
+            <h3><a href="tips.html">When is the best time to sell?</a></h3>
+            <p>Learn how prices move through the year and plan your harvest.</p>
+            <a class="link-more" href="tips.html">Read more<span class="visually-hidden">: When is the best time to sell?</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Ready to buy or sell crops?</h2>
+            <p>Talk to our team today. We are happy to help.</p>
+          </div>
+          <a class="btn btn--light" href="contact.html">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (the same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/logo-light.svg" alt="" width="38" height="38">
+            <span>GreenHarvest</span>
+          </a>
+          <p>We connect farmers and buyers so good crops reach good tables.</p>
+        </div>
+
+        <div>
+          <h2>Quick links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="crops.html">Our Crops</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tips.html">Farming Tips</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contact info</h2>
+          <ul>
+            <li>12 Farm Road, Freetown, Sierra Leone</li>
+            <li><a href="tel:+23200000000">+232 00 000 000</a></li>
+            <li><a href="mailto:hello@greenharvest.com">hello@greenharvest.com</a></li>
+            <li>Monday to Saturday, 8am to 5pm</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Follow us</h2>
+          <ul class="social">
+            <li><a href="#" aria-label="GreenHarvest on Facebook"><img src="images/social-facebook.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="#" aria-label="GreenHarvest on LinkedIn"><img src="images/social-linkedin.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="#" aria-label="GreenHarvest on X"><img src="images/social-x.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="#" aria-label="GreenHarvest on YouTube"><img src="images/social-youtube.svg" alt="" width="22" height="22"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GreenHarvest. All rights reserved.</p>
+        <p>Privacy Policy &nbsp;|&nbsp; Terms</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

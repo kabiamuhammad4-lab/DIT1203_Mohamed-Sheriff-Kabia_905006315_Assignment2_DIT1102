@@ -1,0 +1,5 @@
+# files my computer makes that do not belong in the repository
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
